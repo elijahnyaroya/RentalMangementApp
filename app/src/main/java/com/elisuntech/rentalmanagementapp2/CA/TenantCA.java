@@ -67,7 +67,7 @@ public class TenantCA extends RecyclerView.Adapter<TenantCA.MyViewHolder>
         this.tenantList = tenantList;
         this.tenantListFiltered = tenantList;
     }
-
+//
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
