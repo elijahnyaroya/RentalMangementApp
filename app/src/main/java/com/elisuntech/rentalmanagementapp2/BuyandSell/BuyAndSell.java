@@ -135,9 +135,9 @@ public class BuyAndSell extends AppCompatActivity implements buysellCA.TenantssA
 
     }
     private void fetchProduct() {
-        String URL = URL_CONNECTOR+"pullproducts.php";
+        String URL_link = URL_CONNECTOR+"pullproducts.php";
 
-        StringRequest request = new StringRequest(StringRequest.Method.POST,URL,
+        StringRequest request = new StringRequest(StringRequest.Method.POST,URL_link,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
