@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/rent"
+        android:enabled="true"
+        android:icon="@drawable/ic_rentlatepayment"
+        android:title="Rent"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/water"
+        android:enabled="true"
+        android:icon="@drawable/ic_watepayment"
+        android:title="Water"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/others"
+        android:enabled="true"
+        android:icon="@drawable/latepayment_ic"
+        android:title="others"
+        app:showAsAction="ifRoom" />
+
+</menu>

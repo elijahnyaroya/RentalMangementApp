@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:id="@+id/rowBackground"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/leftsidelayout"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/thumbnail"
+            android:layout_height="@dimen/thumbnail"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/row_padding" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thumbnail"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/contact_name"
+            android:textSize="@dimen/contact_name" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+        <TextView
+            android:id="@+id/tenantIDNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+        <TextView
+            android:id="@+id/paymentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tenantIDNo"
+            android:layout_toRightOf="@id/thumbnail"
+            android:textColor="@color/contact_number"
+            android:textSize="@dimen/contact_number" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:id="@+id/moreActions"
+        android:layout_toRightOf="@id/leftsidelayout"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_moreaction"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/row_padding" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

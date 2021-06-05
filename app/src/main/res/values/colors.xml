@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="PrimaryColor">#6F35A5</color>
+    <color name="PrimaryLightColor">#F1E6FF</color>
+    <color name="PrimaryWhite">#F1FFFF</color>
+
+    <!--<color name="colorPrimary">#111</color>
+    <color name="colorPrimaryDark">#FFF</color>
+    <color name="colorAccent">#ea3732</color>-->
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
+
+
+</resources>

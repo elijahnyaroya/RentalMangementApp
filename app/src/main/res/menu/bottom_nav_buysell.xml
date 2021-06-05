@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Software"
+        android:enabled="true"
+        android:icon="@drawable/ic_computer"
+        android:title="Software"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/Electronics"
+        android:enabled="true"
+        android:icon="@drawable/ic_electronics"
+        android:title="Electronics"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/Cars"
+        android:enabled="true"
+        android:icon="@drawable/ic_cars"
+        android:title="Cars"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/foodstaffs"
+        android:enabled="true"
+        android:icon="@drawable/ic_foods"
+        android:title="Foods"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/land"
+        android:enabled="true"
+        android:icon="@drawable/ic_landscape"
+        android:title="Land"
+        app:showAsAction="ifRoom" />
+
+</menu>

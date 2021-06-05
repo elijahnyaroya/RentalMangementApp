@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Leave a message to the seller"/>
+
+    <EditText
+        android:id="@+id/message"
+        android:inputType="textMultiLine"
+        android:background="@drawable/styleedittextfild"
+        android:layout_height="150dp"
+        android:gravity="top|left"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"
+        android:scrollbarStyle="insideInset"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Send message"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/PrimaryWhite"
+        android:background="@drawable/btnsignin_gradient"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

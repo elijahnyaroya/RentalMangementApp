@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/rentPayment"
+        android:icon="@drawable/ic_rentlatepayment"
+        android:title="Rent Defaulters" />
+    <item
+    android:id="@+id/waterbillpayment"
+    android:icon="@drawable/ic_watepayment"
+    android:title="Water bill Defaulters"/>
+    <item
+        android:id="@+id/otherpayment"
+        android:icon="@drawable/latepayment_ic"
+        android:title="Other Payment Defaulter"/>
+
+
+</menu>

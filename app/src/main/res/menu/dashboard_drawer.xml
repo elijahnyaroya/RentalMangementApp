@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/dashboard_ic"
+            android:title="Home " />
+        <item
+            android:id="@+id/addhouse"
+            android:icon="@drawable/ic_addbuilding"
+            android:title="Add Building" />
+        <item
+            android:id="@+id/payment"
+            android:visible="false"
+            android:icon="@drawable/ic_widthdraw"
+            android:title="Make Payment" />
+        <item
+            android:id="@+id/otherpayment"
+            android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+            android:title="Other Payment" />
+        <item
+            android:id="@+id/nav_waterprice"
+            android:icon="@drawable/ic_baseline_local_drink_24"
+            android:title="Set water price " />
+        <item
+            android:id="@+id/nav_watermeterreading"
+            android:icon="@drawable/ic_meterreadings"
+            android:title="Meter Reading " />
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_noyification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/userReport"
+            android:icon="@drawable/ic_latepayment"
+            android:title="Generate user payment report" />
+
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/terms_ic"
+                android:title="About Rental App" />
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@drawable/ic_policy"
+                android:title="Terms and Conditions" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="share" />
+            <item
+                android:id="@+id/nav_logut"
+                android:icon="@drawable/logout_ic"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

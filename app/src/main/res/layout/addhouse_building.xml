@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PrimaryColor"
+        android:layout_gravity="center"
+        android:text="Add House/Bulding/Plaza Name"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="40dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+      android:orientation="vertical">
+      <EditText
+          android:id="@+id/buildingname"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:hint="Building  i.e Hope Plaza"
+          android:paddingLeft="10dp"
+          android:maxLines="1"
+          android:inputType="text"
+          android:background="@drawable/styleedittextfild"
+          android:layout_marginBottom="10dp"
+          />
+      <EditText
+          android:id="@+id/county"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:hint="Select County"
+          android:focusable="false"
+          android:maxLines="1"
+          android:inputType="text"
+          android:paddingLeft="10dp"
+          android:background="@drawable/styleedittextfild"
+          android:layout_marginBottom="10dp"
+          />
+      <EditText
+          android:id="@+id/Town"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:hint="Town i.e Nairobi"
+          android:paddingLeft="10dp"
+          android:maxLines="1"
+          android:inputType="text"
+          android:background="@drawable/styleedittextfild"
+          android:layout_marginBottom="10dp"
+          />
+      <EditText
+          android:id="@+id/placename"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:hint="Location i.e Westlands"
+          android:paddingLeft="10dp"
+          android:maxLines="1"
+          android:inputType="text"
+          android:background="@drawable/styleedittextfild"
+          android:layout_marginBottom="10dp"
+          />
+      <Button
+          android:id="@+id/addHouseBtn"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:text="Submit"
+          android:background="@drawable/btnsignin_gradient"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:textColor="@color/PrimaryWhite"/>
+  </LinearLayout>
+
+</LinearLayout>

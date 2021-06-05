@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardElevation="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingLeft="10dp"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:id="@+id/Amountpayable"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="sans-serif-medium"
+              android:text="Amount : Ksh.900"
+              android:textColor="@color/contact_name"
+              android:textSize="@dimen/contact_name" />
+
+          <ImageView
+              android:id="@+id/makePaymentdefaulter"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:src="@drawable/ic_payment"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_alignParentRight="true"/>
+
+          <TextView
+              android:id="@+id/dateDue"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/Amountpayable"
+              android:textColor="@color/contact_number"
+              android:text="Date Due : 12/12/2020"
+              android:textSize="@dimen/contact_number" />
+
+          <TextView
+              android:id="@+id/dayspassed"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/dateDue"
+              android:text="Days passed : 30 days"
+              android:textColor="@color/contact_number"
+              android:textSize="@dimen/contact_number" />
+      </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

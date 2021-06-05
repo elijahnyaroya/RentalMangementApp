@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elisuntech.rentalmanagementapp2">
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.elisuntech.rentalmanagementapp2.commonMethods.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.elisuntech.rentalmanagementapp2.BuyandSell.chatwithbuyers"></activity>
+        <activity android:name="com.elisuntech.rentalmanagementapp2.Auths.resetpassword" />
+        <activity android:name="com.elisuntech.rentalmanagementapp2.MainContent.termsandconditionaboutus" />
+        <activity android:name=".payment_folder.paypalPayment" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.MainContent.waterMeterReading"
+            android:label="@string/title_activity_water_meter_reading"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.MainContent.DeliveryTruck"
+            android:label="@string/title_activity_delivery_truck"
+            android:parentActivityName="com.elisuntech.rentalmanagementapp2.MainContent.dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.MainContent.OtherPayments"
+            android:label="@string/title_activity_other_payments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.MainContent.WaterBillPayment"
+            android:label="@string/title_activity_water_bill_payment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.BuyandSell.SalesContact"
+            android:label="@string/title_activity_sales_contact"
+            android:parentActivityName="com.elisuntech.rentalmanagementapp2.MainContent.dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.BuyandSell.ProductDetailspage"
+            android:label="@string/title_activity_product_detailspage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.BuyandSell.BuyAndSell"
+            android:label="@string/title_activity_buy_and_sell"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.elisuntech.rentalmanagementapp2.Messages.MessageChat" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.Messages.MessageContactList"
+            android:label="@string/title_activity_message_contact_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.PaymentDefaulters.otherPaymentDefaulters"
+            android:label="@string/title_activity_other_payment_defaulters"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.PaymentDefaulters.otherspaymentHistory"
+            android:parentActivityName="com.elisuntech.rentalmanagementapp2.MainContent.dashboard" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.PaymentDefaulters.waterPaymentHistory"
+            android:parentActivityName="com.elisuntech.rentalmanagementapp2.MainContent.dashboard" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.PaymentDefaulters.tenantpaymentHistory"
+            android:parentActivityName="com.elisuntech.rentalmanagementapp2.MainContent.dashboard" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.PaymentDefaulters.rentDefaulter"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="com.elisuntech.rentalmanagementapp2.MainContent.dashboard"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/defaultersearch" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.MainContent.TenantPayment"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.PaymentDefaulters.waterDefaulters"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.elisuntech.rentalmanagementapp2.MainContent.addtenant" />
+        <activity android:name="com.elisuntech.rentalmanagementapp2.MainContent.addroom" />
+        <activity android:name="com.elisuntech.rentalmanagementapp2.MainContent.sendNotice" />
+        <activity
+            android:name="com.elisuntech.rentalmanagementapp2.MainContent.dashboard"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.elisuntech.rentalmanagementapp2.Auths.register" />
+        <activity android:name="com.elisuntech.rentalmanagementapp2.Auths.login" />
+        <activity android:name="com.elisuntech.rentalmanagementapp2.SplashScrActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
